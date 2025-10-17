@@ -25,7 +25,7 @@ CFLAGS  := -Wall -Wextra -Wpedantic -Wshadow -Wconversion -O1 -std=c99 \
 			-fomit-frame-pointer -fstack-clash-protection -fPIE \
 			-funroll-loops -fno-common -fstack-protector-strong
 
-LDFLAGS := -lncurses -lform -lpanel -lform -lm -Wl,-z,now \
+LDFLAGS := -lncurses -lform -lpanel -lmenu -lm -Wl,-z,now \
 			-Wl,-O1 -Wl,--as-needed -s -Wl,-pie
 
 $(OUT_D):
